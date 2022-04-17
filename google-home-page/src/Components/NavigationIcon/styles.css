@@ -1,0 +1,9 @@
+.nav-bar-second-item {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 25px;
+}
+
+.fa-beer {
+  color: #333;
+}

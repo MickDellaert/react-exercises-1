@@ -1,0 +1,11 @@
+.nav-bar-first-item {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 25px;
+}
+
+.nav-bar-second-item {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 25px;
+}
