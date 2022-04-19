@@ -1,0 +1,12 @@
+button {
+  position: relative;
+  top: 45px;
+  padding: 15px 26px;
+  border: none;
+  outline: none;
+  color: #333;
+  background-color: #f8f9fa;
+  margin: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}

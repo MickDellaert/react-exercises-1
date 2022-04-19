@@ -1,13 +1,14 @@
 import './App.css';
-import Navigation from './Components/Navigation/Navigation.jsx';
+import { FooterContainer } from './Components/footer/FooterContainer/FooterContainer';
+import { HeaderContainer } from './Components/header/HeaderContainer/HeaderContainer';
+import NavigationContainer from './Components/Nav/NavigationContainer/NavigationContainer';
 
 function App() {
   return (
     <div className="App">
-      <Navigation>
-        
-        
-        </Navigation>
+      <NavigationContainer/>
+      <HeaderContainer/>
+      <FooterContainer/>    
     </div>
   );
 }

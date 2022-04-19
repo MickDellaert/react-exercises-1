@@ -1,9 +1,9 @@
 import "./styles.css";
 
-const NavigationIcon = ({ style, icon }) => {
+const NavigationIcon = ({ cssClassName, icon }) => {
   return (
     <>
-      <a className={style} href="#">
+      <a className={cssClassName} href="#">
         <i className={`fas fa-${icon}`} />
       </a>
     </>
