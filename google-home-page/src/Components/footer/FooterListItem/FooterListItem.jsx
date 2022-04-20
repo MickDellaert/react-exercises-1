@@ -1,9 +1,9 @@
 export const FooterListItem = (props) => {
   return (
     <>
-      {props.itemNames.map((el, index) => (
+      {props.itemNames.map((itemName, index) => (
         <a className={props.itemClass} key={index} href="/#">
-          <li>{el.itemName}</li>
+          <li>{itemName}</li>
         </a>
       ))}
     </>
