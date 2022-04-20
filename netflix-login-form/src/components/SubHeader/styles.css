@@ -1,0 +1,17 @@
+.sub-header {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.header-link {
+  margin-top: 15px;
+  color: rgb(117, 140, 140);
+  font-weight: bold;
+}
+
+.header-link span {
+  padding-left: 8px;
+  font-weight: normal;
+  color: #fff;
+}

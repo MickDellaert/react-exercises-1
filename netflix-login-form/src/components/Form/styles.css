@@ -1,0 +1,31 @@
+input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: none;
+  border-radius: 3px;
+  padding: 12px 55px;
+  outline: none;
+  font-size: 1rem;
+  color: rgb(117, 140, 140);
+  background-color: rgb(51, 51, 51);
+  z-index: 1;
+  margin-top: 15px;
+  margin-left: 5px;
+}
+
+::placeholder {
+  position: relative;
+  right: 30px;
+  width: 150px;
+}
+
+.sign-in {
+  margin-top: 15px;
+  cursor: pointer;
+  width: 95%;
+  border-radius: 3px;
+  background-color: #e40613;
+  padding: 12px 35px;
+  color: #fff;
+}
