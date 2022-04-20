@@ -1,10 +1,10 @@
-import { NewList } from "../FooterList/FooterList";
+import { FooterList } from "../FooterList/FooterList";
 
 export const FooterContainer = () => {
   return (
     <>
       <footer>
-        <NewList />
+        <FooterList />
       </footer>
     </>
   );

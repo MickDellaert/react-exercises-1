@@ -2,8 +2,8 @@ import { FooterListItem } from "../FooterListItem/FooterListItem";
 
 const footerLists = [
   {
-    listName: "footer-section-1",
-    cssClass: "footer-child-item1",
+    listClass: "footer-section-1",
+    itemClass: "footer-child-item1",
     itemNames: [
       { itemName: "Advertising" },
       { itemName: "Business" },
@@ -11,13 +11,13 @@ const footerLists = [
     ],
   },
   {
-    listName: "footer-section-2",
-    cssClass: "footer-child-item2",
+    listClass: "footer-section-2",
+    itemClass: "footer-child-item2",
     itemNames: [{ itemName: "Carbon neutral since 2007" }],
   },
   {
-    listName: "footer-section-3",
-    cssClass: "footer-child-item3",
+    listClass: "footer-section-3",
+    itemClass: "footer-child-item3",
     itemNames: [
       { itemName: "Privacy" },
       { itemName: "Teams" },
@@ -26,15 +26,14 @@ const footerLists = [
   },
 ];
 
-export const NewList = () => {
+export const FooterList = () => {
   return (
     <>
       {footerLists.map((el, index) => (
         <div key={index}>
-          <ul className={el.listName}>
+          <ul className={el.listClass}>
             <FooterListItem
-              listName={el.listName}
-              cssClass={el.cssClass}
+              itemClass={el.itemClass}
               itemNames={el.itemNames}
             />
           </ul>
