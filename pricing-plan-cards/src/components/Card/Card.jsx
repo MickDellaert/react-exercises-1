@@ -1,7 +1,7 @@
 import { CardText } from "../CardText/CardText";
 import { CardIcon } from "../CardIcon/CardIcon";
 
-const cardData = [
+const data = [
   {
     cardClass: "card-1",
     cardText: { h3: "Free", p: "For Individual", h2: "$0" },
@@ -45,10 +45,10 @@ const cardData = [
 ];
 
 export const Card = () => {
-  return cardData.map((cardData, index) => (
+  return data.map((cardData, index) => (
     <>
       <div key={index} className={cardData.cardClass}>
-        <CardText className={cardData.cardClass} cardTexts={cardData} />
+        <CardText className={cardData.cardClass} cardData={cardData} />
         <CardIcon iconData={cardData.iconData} />
       </div>
     </>

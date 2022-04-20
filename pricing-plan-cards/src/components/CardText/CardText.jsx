@@ -1,10 +1,10 @@
 import React from "react";
 import CardTitles from "../CardTitles/CardTitles.jsx";
 
-export const CardText = ({ cardTexts }) => {
+export const CardText = ({ cardData }) => {
   return (
     <>
-      <CardTitles cardTitles={cardTexts.cardText} />
+      <CardTitles cardTitles={cardData.cardText} />
     </>
   );
 };
