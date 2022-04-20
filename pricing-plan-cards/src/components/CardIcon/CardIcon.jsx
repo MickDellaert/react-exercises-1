@@ -5,10 +5,7 @@ export const CardIcon = ({ iconData }) => {
   console.log(iconData);
   return (
     <>
-      <div className={iconData.iconClass}>
-        {iconData.iconClass}
-        <CardIconText cardIconTexts={iconData.h4} />
-      </div>
+        <CardIconText cardIconTexts={iconData.h4} cardIcon={iconData.i} cardIconClass={iconData.iconClass}/>
     </>
   );
 };

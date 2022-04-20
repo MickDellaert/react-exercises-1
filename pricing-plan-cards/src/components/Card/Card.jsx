@@ -17,7 +17,13 @@ const cardData = [
     iconData: {
       iconClass: "icon1",
       i: "gg-check-o",
-      h4: ["One Device", "Unlimited Download", "Editable Files", "1GB Storage"],
+      h4: [
+        "Six Devices",
+        "Unlimited Download",
+        "300+ Icon Package",
+        "Fully Editable Files",
+        "500GB Storage",
+      ],
     },
   },
   {
@@ -26,7 +32,14 @@ const cardData = [
     iconData: {
       iconClass: "icon1",
       i: "gg-check-o",
-      h4: ["One Device", "Unlimited Download", "Editable Files", "1GB Storage"],
+      h4: [
+        "Twelve Devices",
+        "Unlimited Download",
+        "3000+ Icon Package",
+        "Fully Editable Files",
+        "2TB Storage",
+        "5TB Data Transfer",
+      ],
     },
   },
 ];
@@ -34,14 +47,9 @@ const cardData = [
 export const Card = () => {
   return cardData.map((cardData, index) => (
     <>
-      <div className={cardData.cardClass}>
-        <CardText
-          key={index}
-          className={cardData.cardClass}
-          cardTexts={cardData}
-        />
-        <CardIcon
-        iconData={cardData.iconData}/>
+      <div key={index} className={cardData.cardClass}>
+        <CardText className={cardData.cardClass} cardTexts={cardData} />
+        <CardIcon iconData={cardData.iconData} />
       </div>
     </>
   ));
