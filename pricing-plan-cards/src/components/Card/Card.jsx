@@ -1,20 +1,24 @@
-import { CardText } from "../CardText/CardText";
-import { CardIcon } from "../CardIcon/CardIcon";
+import { CardTitlesContainer } from "../CardTitlesContainer/CardTitlesContainer";
+import { CardIconContainer } from "../CardIconContainer/CardIconContainer";
+import { CardButton } from "../CardButton/CardButton";
 
 const data = [
   {
-    cardClass: "card-1",
+    id: "1",
     cardText: { h3: "Free", p: "For Individual", h2: "$0" },
     iconData: {
+      id: "4",
       iconClass: "icon1",
       i: "gg-check-o",
       h4: ["One Device", "Unlimited Download", "Editable Files", "1GB Storage"],
     },
   },
   {
-    cardClass: "card-2",
+    id: "2",
     cardText: { h3: "Pro", p: "For Company", h2: "$80" },
     iconData: {
+      id: "5",
+
       iconClass: "icon1",
       i: "gg-check-o",
       h4: [
@@ -27,9 +31,10 @@ const data = [
     },
   },
   {
-    cardClass: "card-3",
+    id: "3",
     cardText: { h3: "Enterprise", p: "For Team", h2: "$180" },
     iconData: {
+      id: "6",
       iconClass: "icon1",
       i: "gg-check-o",
       h4: [
@@ -46,11 +51,10 @@ const data = [
 
 export const Card = () => {
   return data.map((cardData, index) => (
-    <>
-      <div key={index} className={cardData.cardClass}>
-        <CardText className={cardData.cardClass} cardData={cardData} />
-        <CardIcon iconData={cardData.iconData} />
+      <div key={cardData.id} className={`card-${index + 1}`} >
+        <CardTitlesContainer  cardData={cardData} />
+        <CardIconContainer  iconData={cardData.iconData} />
+        <CardButton buttonClass={index + 1} />
       </div>
-    </>
   ));
 };

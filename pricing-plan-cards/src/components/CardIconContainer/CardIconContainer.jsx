@@ -1,7 +1,7 @@
 import React from "react";
 import { CardIconText } from "../CardIconText/CardIconText";
 
-export const CardIcon = ({ iconData }) => {
+export const CardIconContainer = ({ iconData }) => {
   return (
     <>
       <CardIconText

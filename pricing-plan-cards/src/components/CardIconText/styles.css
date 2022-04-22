@@ -1,0 +1,14 @@
+.card-1,
+.card-2,
+.card-3 {
+  background-color: #242c44;
+  color: #fff;
+  border-radius: 20px;
+  padding: 5% 6%;
+}
+
+.icon1 {
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+}
