@@ -1,20 +1,14 @@
 import React from "react";
 
-export const CalcButtons = ({ calcButtons, classIndex }) => {
-  console.log(calcButtons);
+import { CalcButton } from "../CalcButton/CalcButton";
+import { CalcLastButton } from "../CalcLastButton/CalcLastButton";
 
+export const CalcButtons = ({ calcButtons, classIndex }) => {
   return calcButtons.map((button, i, arr) =>
     arr.length - 1 !== i ? (
-      <React.Fragment key={i}>
-        <input type="submit" value={button}></input>{" "}
-      </React.Fragment>
+      <CalcButton key={button} button={button} />
     ) : (
-      <input
-        key={i}
-        className={`flex-item-${classIndex + 1}`}
-        type="submit"
-        value={button}
-      ></input>
+      <CalcLastButton key={button} button={button} classNumber={classIndex + 1} />
     )
   );
 };
