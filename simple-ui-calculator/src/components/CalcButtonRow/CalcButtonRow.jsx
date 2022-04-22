@@ -17,11 +17,7 @@ export const CalcButtonRow = () => {
     <>
       {buttons.map((buttonArray, index) => (
         <div key={index} className={`calc-item-${index + 1}`}>
-          <CalcButtons
-            
-            classIndex={index}
-            calcButtons={buttonArray}
-          />
+          <CalcButtons classIndex={index} calcButtons={buttonArray} />
         </div>
       ))}
     </>

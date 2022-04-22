@@ -5,9 +5,9 @@ import { CalcInput } from "./components/CalcInput/CalcInput";
 
 function App() {
   return (
-      <header>
-        <CalcContainer />
-      </header>
+    <header>
+      <CalcContainer />
+    </header>
   );
 }
 
