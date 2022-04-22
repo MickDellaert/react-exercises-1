@@ -1,0 +1,11 @@
+img {
+  position: relative;
+  bottom: 8px;
+  width: 38px;
+  height: 38px;
+  border-radius: 60%;
+  display: block;
+  position: relative;
+  border: 0;
+  margin: 0;
+}

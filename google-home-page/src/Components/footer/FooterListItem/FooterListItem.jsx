@@ -1,4 +1,5 @@
 export const FooterListItem = (props) => {
+  console.log(props)
   return (
     <>
       {props.itemNames.map((itemName, index) => (

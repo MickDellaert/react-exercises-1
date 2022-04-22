@@ -2,6 +2,7 @@ import "./styles.css";
 
 import NavigationItem from "../NavigationItem/NavigationItem";
 import NavigationIcon from "../NavigationIcon/NavigationIcon.jsx";
+import NavigationPicture from "../NavigationPicture/NavigationPicture";
 
 const navFirstNames = ["about", "store"];
 const navSecondNames = ["Gmail", "images"];
@@ -27,6 +28,7 @@ const NavigationContainer = () => {
           />
         ))}
         <NavigationIcon cssClassName="navbar-second-item" icon={"beer"} />
+        <NavigationPicture cssClassName="navbar-second-item"/>
       </ul>
     </nav>
   );
